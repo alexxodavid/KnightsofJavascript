@@ -1,106 +1,106 @@
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url('./images/background.jpg'); /* Add your image here */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./images/background.jpg'); /* Add your image here */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 #gameOverScreen {
-    display: none;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    font-size: 36px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    border-radius: 10px;
-    position: absolute;
-    top: 20%;
-    z-index: 10;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  font-size: 36px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  position: absolute;
+  top: 20%;
+  z-index: 10;
 }
 
 #fightingSpace {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .player {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .healthSection {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px;
-    font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .inactive {
-    background-color: grey;
+  background-color: grey;
 }
 
 .active {
-    background-color: red;
+  background-color: red;
 }
 
 .idle {
-    height: 350px;
-    width: 350px;
+  height: 350px;
+  width: 350px;
 }
 
 .attack {
-    height: 350px;
-    width: 360px;
-    background: linear-gradient(-90deg, rgba(0,255,0, 0.7), rgba(255,0,0,0) 90.71%);
-    border-top-right-radius: 80%;
-    border-bottom-right-radius: 80%;
+  height: 350px;
+  width: 360px;
+  background: linear-gradient(-90deg, rgba(0,255,0, 0.7), rgba(255,0,0,0) 90.71%);
+  border-top-right-radius: 80%;
+  border-bottom-right-radius: 80%;
 }
 
 .damage {
-    height: 350px;
-    width: 350px;
-    background: linear-gradient(-90deg, rgba(255,0,0,0), rgba(255,0,0,.3) 70.71%);
+  height: 350px;
+  width: 350px;
+  background: linear-gradient(-90deg, rgba(255,0,0,0), rgba(255,0,0,.3) 70.71%);
 }
 
 .attack,
 .damage,
 .idle {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #playerOneHealth,
 #playerTwoHealth {
-    color: green;
+  color: green;
 }
 
 .playerSpace {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 button {
-    height: 75px;
-    width: 125px;
-    background-color: red;
-    border: solid 5px grey;
-    border-radius: 0.5rem;
-    color: white;
-    font-weight: 600;
-    font-size: 24px;
-    cursor: pointer;
+  height: 75px;
+  width: 125px;
+  background-color: red;
+  border: solid 5px grey;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
 }
