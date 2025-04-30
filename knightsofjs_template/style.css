@@ -3,10 +3,26 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: url('./images/background.jpg'); /* Add your image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 #gameOverScreen {
     display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    position: absolute;
+    top: 20%;
+    z-index: 10;
 }
 
 #fightingSpace {
@@ -42,19 +58,26 @@ body {
 .idle {
     height: 350px;
     width: 350px;
-    background-color: none;
 }
 
 .attack {
     height: 350px;
     width: 360px;
-    background: linear-gradient(-90deg, rgba(0,255,0, 0.7), rgba(255,0,0,0) 90.71%); border-top-right-radius: 80%; border-bottom-right-radius: 80%";
+    background: linear-gradient(-90deg, rgba(0,255,0, 0.7), rgba(255,0,0,0) 90.71%);
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
 }
 
 .damage {
     height: 350px;
     width: 350px;
     background: linear-gradient(-90deg, rgba(255,0,0,0), rgba(255,0,0,.3) 70.71%);
+}
+
+.attack,
+.damage,
+.idle {
+    transition: all 0.3s ease;
 }
 
 #playerOneHealth,
@@ -79,4 +102,5 @@ button {
     color: white;
     font-weight: 600;
     font-size: 24px;
+    cursor: pointer;
 }
